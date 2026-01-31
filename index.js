@@ -13,3 +13,7 @@ app.use("/users",require("./routes/user.routes"));
 app .listen(process.env.PORT,()=>{
     console.log('Server running on port ${process.env.PORT}');
 });
+
+const notFound =required("./middlewares/notFound.middleware"
+);
+app.use(notFound);
