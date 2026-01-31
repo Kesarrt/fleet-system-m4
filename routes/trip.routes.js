@@ -1,8 +1,8 @@
-const express=require("express");
-const router=express.Router();
-const{ createTrip, endTrip }= require("../controllers/trip.controller");
+const express = require("express");
+const router = express.Router();
+const { createTrip, endTrip } = require("../controllers/trip.controller");
 
-router.post("/create",createTrip);
-route.patch("/end/:tripId",endTrip);
+router.post("/create", createTrip);
+router.patch("/end/:tripId", endTrip);
 
-module.export=router;
+module.exports = router;
